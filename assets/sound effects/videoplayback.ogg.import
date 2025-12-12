@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dnroopkok504u"
+path="res://.godot/imported/videoplayback.ogg-a9d40ba131b06446c46e14a5ebae86b7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sound effects/videoplayback.ogg"
+dest_files=["res://.godot/imported/videoplayback.ogg-a9d40ba131b06446c46e14a5ebae86b7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

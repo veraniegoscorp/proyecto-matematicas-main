@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dphxqu4hirkhx"]
+
+[ext_resource type="AudioStream" uid="uid://dnroopkok504u" path="res://assets/sound effects/videoplayback.ogg" id="1_wdcjo"]
+[ext_resource type="AudioStream" uid="uid://ctgvpu3bgra4x" path="res://assets/sound effects/Bad Piggies Theme [TubeRipper.cc].mp3" id="2_hfx5h"]
+[ext_resource type="AudioStream" uid="uid://7l8ssxypcjv1" path="res://assets/sound effects/Terraria Music - Space [TubeRipper.cc].mp3" id="3_vu3vg"]
+[ext_resource type="AudioStream" uid="uid://ccbtrdvbmvnhb" path="res://assets/sound effects/Super Mario Coin Sound Effect [TubeRipper.cc].mp3" id="4_acse5"]
+
+[node name="music_and_sounds" type="Node"]
+
+[node name="disparo_inicial" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_wdcjo")
+
+[node name="bad_piggies" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_hfx5h")
+
+[node name="terraria_galaxy" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_vu3vg")
+
+[node name="coins" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_acse5")
+
+[node name="penguin_die" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_wdcjo")

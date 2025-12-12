@@ -1,0 +1,81 @@
+[gd_scene load_steps=12 format=3 uid="uid://3h5hbrclb3hy"]
+
+[ext_resource type="Texture2D" uid="uid://dt1kgx6draex7" path="res://assets/Enemies/chicken.png" id="1_11c6a"]
+[ext_resource type="Script" uid="uid://ce0wq11twk8xi" path="res://scripts/target.gd" id="1_dcuf4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dcuf4"]
+atlas = ExtResource("1_11c6a")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6n2mv"]
+atlas = ExtResource("1_11c6a")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7674"]
+atlas = ExtResource("1_11c6a")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tehnb"]
+atlas = ExtResource("1_11c6a")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ltmyf"]
+atlas = ExtResource("1_11c6a")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvo0y"]
+atlas = ExtResource("1_11c6a")
+region = Rect2(160, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h3ecx"]
+atlas = ExtResource("1_11c6a")
+region = Rect2(192, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2cwek"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dcuf4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6n2mv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7674")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tehnb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltmyf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvo0y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h3ecx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q22qn"]
+size = Vector2(18, 14.875)
+
+[node name="target" type="Area2D"]
+script = ExtResource("1_dcuf4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-4.76837e-07, -6)
+scale = Vector2(0.742188, 0.648438)
+sprite_frames = SubResource("SpriteFrames_2cwek")
+frame = 4
+frame_progress = 0.996705
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -2)
+shape = SubResource("RectangleShape2D_q22qn")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

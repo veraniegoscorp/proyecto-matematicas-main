@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ctgvpu3bgra4x"
+path="res://.godot/imported/Bad Piggies Theme [TubeRipper.cc].mp3-c64f7b7a8ed21b2ae18e2fb4b5f73a8f.mp3str"
+
+[deps]
+
+source_file="res://assets/sound effects/Bad Piggies Theme [TubeRipper.cc].mp3"
+dest_files=["res://.godot/imported/Bad Piggies Theme [TubeRipper.cc].mp3-c64f7b7a8ed21b2ae18e2fb4b5f73a8f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
